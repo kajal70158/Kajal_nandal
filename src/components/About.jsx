@@ -46,15 +46,15 @@ export default function About() {
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {/* Main Intro Card */}
-          <motion.div variants={item} className="md:col-span-2 bg-surface/50 border border-border/50 rounded-3xl p-8 backdrop-blur-sm relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-secondary/5 rounded-full blur-[80px] -z-10 group-hover:bg-brand-secondary/10 transition-colors duration-500" />
+          <motion.div variants={item} className="md:col-span-2 bg-[#111113] border border-white/5 rounded-3xl p-8 backdrop-blur-sm relative overflow-hidden group hover:border-white/10 transition-all duration-500 shadow-2xl">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-secondary/5 rounded-full blur-[80px] -z-10 group-hover:bg-brand-secondary/15 transition-colors duration-500" />
             <Terminal className="w-8 h-8 text-brand-primary mb-6" />
-            <h3 className="text-2xl text-white font-medium mb-4">Code. Create. Connect.</h3>
+            <h3 className="text-2xl text-white font-medium mb-4">Architect. Build. Scale.</h3>
             <p className="text-muted leading-relaxed mb-6">
-              I'm a Computer Science undergraduate at Geeta University, Haryana. With hands-on internship experience in MERN stack development and Python data analysis, I bridge the gap between raw data and polished user interfaces.
+              I am a results-driven Software Engineer with a proven track record of designing and delivering robust full-stack applications. Specializing in the MERN ecosystem and Python-driven data solutions, I focus on writing clean, maintainable code and optimizing system performance.
             </p>
             <p className="text-muted leading-relaxed">
-              When I'm not coding, you'll find me on the badminton court or exploring new places. I love solving problems and constantly learning new technologies.
+              From architecting secure RESTful APIs to developing highly interactive React interfaces, I bridge the gap between complex backend logic and seamless user experiences. I thrive in environments that challenge me to solve hard problems and continuously push the boundaries of modern web technologies.
             </p>
           </motion.div>
 

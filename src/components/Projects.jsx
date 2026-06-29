@@ -7,6 +7,7 @@ const projects = [
     title: "Resume Analyser",
     color: "#38bdf8",
     stack: ["React", "Node.js", "Express", "AI Integration"],
+    description: "An AI-powered application that parses resumes, analyzes keyword density against job descriptions, and provides actionable insights to improve ATS scoring.",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800&auto=format&fit=crop", 
     github: "https://github.com/kajal70158/Resume-analyser",
     live: "https://resume-analyser-89wh.onrender.com/",
@@ -15,6 +16,7 @@ const projects = [
     title: "Jannat Food",
     color: "#fbbf24",
     stack: ["React", "Node.js", "MongoDB", "Express"],
+    description: "A full-stack food delivery platform featuring a custom shopping cart, secure payment integration, and an admin dashboard for real-time order tracking.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop", 
     github: "https://github.com/kajal70158/Jannat-Food",
     live: "https://jannat-food.onrender.com/",
@@ -23,6 +25,7 @@ const projects = [
     title: "Learning Platform",
     color: "#a78bfa",
     stack: ["React", "Node.js", "MongoDB"],
+    description: "An interactive EdTech platform supporting video streaming, module-based learning paths, and an automated backend grading system for student assessments.",
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop", 
     github: "https://github.com/kajal70158/Learning-Platform",
     live: "https://learning-platform-ltfe.onrender.com/",
@@ -31,6 +34,7 @@ const projects = [
     title: "Meeting App",
     color: "#34d399",
     stack: ["React", "WebRTC", "Socket.io"],
+    description: "A low-latency video conferencing application utilizing WebRTC and Socket.io for seamless peer-to-peer communication and real-time text chat.",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop", 
     github: "https://github.com/kajal70158/meeting",
     live: "https://meeting-0jrx.onrender.com/",
@@ -39,6 +43,7 @@ const projects = [
     title: "Event Management System",
     color: "#f472b6",
     stack: ["React", "Express", "MongoDB", "Node.js"],
+    description: "A comprehensive management dashboard for organizing events, handling ticket sales, and analyzing attendee metrics through a scalable backend architecture.",
     image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop", 
     github: "https://github.com/kajal70158/Event-Management-System",
     live: "https://eventmanagement-system-tau.vercel.app/",
@@ -111,9 +116,12 @@ export default function Projects() {
 
               {/* Content Container */}
               <div className="p-6 sm:p-8 pt-0 -mt-2 relative z-20">
-                <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-6 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-4 tracking-tight">
                   {p.title}
                 </h3>
+                <p className="text-muted text-sm leading-relaxed mb-8 border-l-2 border-brand-primary/30 pl-4 py-1">
+                  {p.description}
+                </p>
                 
                 <div className="flex flex-wrap items-end justify-between gap-6">
                   <div className="flex flex-wrap gap-2.5 flex-1">

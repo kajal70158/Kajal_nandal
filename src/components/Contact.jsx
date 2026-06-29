@@ -30,8 +30,8 @@ export default function Contact() {
           </h2>
           
           <p className="text-muted text-lg leading-relaxed mb-12 max-w-2xl mx-auto">
-            I'm actively looking for internships and full-time opportunities. Whether
-            you have a project in mind, a question, or just want to say hi — my inbox is always open!
+            I am currently open to new opportunities and exciting engineering challenges. Whether
+            you're looking to build a robust enterprise application, scale an existing platform, or just want to connect — my inbox is always open.
           </p>
 
           <a

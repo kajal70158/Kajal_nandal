@@ -56,7 +56,7 @@ export default function Certifications() {
             <motion.div
               variants={item}
               key={c.name}
-              className="group bg-surface/30 border border-border/50 rounded-2xl p-6 flex gap-5 items-center hover:bg-surface/80 hover:border-brand-primary/30 transition-all duration-300 backdrop-blur-sm relative overflow-hidden"
+              className="group bg-[#111113] border border-white/5 rounded-3xl p-6 flex gap-5 items-center hover:border-white/10 shadow-2xl transition-all duration-500 backdrop-blur-sm relative overflow-hidden"
             >
               <div 
                 className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300" 

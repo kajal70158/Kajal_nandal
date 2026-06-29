@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
@@ -107,8 +107,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-muted text-lg sm:text-xl max-w-xl leading-relaxed mb-8"
           >
-            B.Tech CSE student at Geeta University building modern web experiences
-            with the MERN stack — transforming ideas into seamless digital realities.
+            Software Engineer specializing in architecting scalable, high-performance web applications. Expertise in the MERN stack, system design, and building elegant digital solutions.
           </motion.p>
 
           <motion.div
@@ -123,6 +122,16 @@ export default function Hero() {
             >
               View Projects
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="/images/Kajal.pdf"
+              download="kajal.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-7 py-3.5 bg-surface border border-border text-white hover:border-brand-secondary hover:bg-brand-secondary/10 hover:text-brand-secondary rounded-full transition-all duration-300 hover:-translate-y-1"
+            >
+              <Download className="w-4 h-4" />
+              Download Resume
             </a>
             <a
               href="#contact"
@@ -153,12 +162,12 @@ export default function Hero() {
             
             <div className="flex gap-8">
               <div>
-                <p className="font-serif text-2xl text-white">7.8</p>
-                <p className="text-xs text-muted uppercase tracking-wider">CGPA</p>
+                <p className="font-serif text-2xl text-white">Full-Stack</p>
+                <p className="text-xs text-muted uppercase tracking-wider">Expertise</p>
               </div>
               <div>
-                <p className="font-serif text-2xl text-white">4+</p>
-                <p className="text-xs text-muted uppercase tracking-wider">Projects</p>
+                <p className="font-serif text-2xl text-white">10+</p>
+                <p className="text-xs text-muted uppercase tracking-wider">Projects Delivered</p>
               </div>
             </div>
           </motion.div>
