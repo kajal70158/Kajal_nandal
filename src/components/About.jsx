@@ -83,46 +83,30 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Education Timeline */}
-          <motion.div variants={item} className="md:col-span-3 bg-surface/50 border border-border/50 rounded-3xl p-8 backdrop-blur-sm">
-            <div className="flex items-center gap-3 mb-8">
-              <GraduationCap className="w-6 h-6 text-brand-primary" />
-              <h3 className="text-xl text-white font-medium">Education Journey</h3>
+          {/* Quick Stats & Hobbies */}
+          <motion.div variants={item} className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Interests Card */}
+            <div className="bg-[#111113] border border-white/5 rounded-3xl p-8 hover:border-white/10 transition-all duration-500 shadow-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-brand-primary/5 rounded-full blur-[60px] -z-10 group-hover:bg-brand-primary/15 transition-colors duration-500" />
+              <h3 className="text-xl text-white font-medium mb-6 flex items-center gap-3">
+                <Award className="w-5 h-5 text-brand-primary" /> Beyond the Screen
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {["Badminton 🏸", "Exploring Places 🌍", "Problem Solving 🧩", "Continuous Learning 📚"].map(hobby => (
+                  <span key={hobby} className="px-4 py-2 bg-[#1a1a1e] border border-white/5 rounded-xl text-sm font-medium text-muted hover:text-white transition-colors cursor-default">
+                    {hobby}
+                  </span>
+                ))}
+              </div>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  degree: "B.Tech — Computer Science",
-                  inst: "Geeta University",
-                  year: "2023 – Present",
-                  score: "7.8 CGPA",
-                },
-                {
-                  degree: "Higher Secondary (12th)",
-                  inst: "Ozone International School",
-                  year: "2023",
-                  score: "83.8%",
-                },
-                {
-                  degree: "Secondary (10th)",
-                  inst: "Ozone International School",
-                  year: "2021",
-                  score: "99.08%",
-                },
-              ].map((edu, i) => (
-                <div key={i} className="relative group">
-                  <div className="absolute -inset-4 bg-white/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <p className="text-sm font-mono text-brand-secondary mb-2">{edu.year}</p>
-                    <p className="text-white font-medium mb-1 text-lg">{edu.degree}</p>
-                    <p className="text-muted text-sm mb-4">{edu.inst}</p>
-                    <span className="inline-block px-3 py-1 text-xs bg-brand-primary/10 text-brand-primary border border-brand-primary/20 rounded-full font-mono">
-                      {edu.score}
-                    </span>
-                  </div>
-                </div>
-              ))}
+
+            {/* Quote/Vision Card */}
+            <div className="bg-[#111113] border border-white/5 rounded-3xl p-8 hover:border-white/10 transition-all duration-500 shadow-2xl relative overflow-hidden group flex flex-col justify-center">
+              <div className="absolute bottom-0 right-0 w-48 h-48 bg-brand-secondary/5 rounded-full blur-[60px] -z-10 group-hover:bg-brand-secondary/15 transition-colors duration-500" />
+              <Briefcase className="w-8 h-8 text-brand-secondary mb-4 opacity-50" />
+              <h3 className="text-2xl text-white font-serif leading-relaxed">
+                "Transforming complex problems into elegant, user-centric solutions."
+              </h3>
             </div>
           </motion.div>
         </motion.div>

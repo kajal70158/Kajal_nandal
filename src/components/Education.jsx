@@ -5,7 +5,7 @@ const educationData = [
   {
     degree: "B.Tech in Computer Science and Engineering",
     institution: "Geeta University",
-    duration: "2022 - 2026",
+    duration: "2023 - Present",
     grade: "7.8 CGPA",
     icon: GraduationCap,
     color: "#818cf8",
@@ -13,12 +13,21 @@ const educationData = [
   },
   {
     degree: "Higher Secondary (12th Grade)",
-    institution: "Your High School Name", // Placeholder for user to update if needed
-    duration: "2020 - 2022",
-    grade: "Distinction",
+    institution: "Ozone International School",
+    duration: "2023",
+    grade: "83.8%",
     icon: BookOpen,
     color: "#c084fc",
-    description: "Focus on Physics, Chemistry, and Mathematics. Built foundational logic and mathematical reasoning skills essential for programming.",
+    description: "Focus on Physics, Chemistry, and Mathematics. Built strong foundational logic and mathematical reasoning skills.",
+  },
+  {
+    degree: "Secondary Education (10th Grade)",
+    institution: "Ozone International School",
+    duration: "2021",
+    grade: "99.08%",
+    icon: Award,
+    color: "#38bdf8",
+    description: "Achieved academic excellence with top percentile scores, developing a strong analytical mindset and work ethic.",
   }
 ];
 

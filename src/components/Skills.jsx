@@ -1,11 +1,27 @@
 import { motion } from "framer-motion";
 
 const allSkills = [
-  "HTML5", "CSS3", "JavaScript (ES6+)", "React.js", "Tailwind CSS",
-  "Node.js", "Express.js", "MongoDB", "RESTful APIs",
-  "C", "C++", "Java", "Python",
-  "Power BI", "Git", "GitHub", "Google Cloud", "VS Code",
-  "Leadership", "Self-driven", "Problem Solving"
+  { name: "HTML5", color: "#E34F26" },
+  { name: "CSS3", color: "#1572B6" },
+  { name: "JavaScript", color: "#F7DF1E" },
+  { name: "React.js", color: "#61DAFB" },
+  { name: "Tailwind CSS", color: "#38B2AC" },
+  { name: "Node.js", color: "#339933" },
+  { name: "Express.js", color: "#A8B9CC" },
+  { name: "MongoDB", color: "#47A248" },
+  { name: "RESTful APIs", color: "#FF5722" },
+  { name: "C", color: "#A8B9CC" },
+  { name: "C++", color: "#00599C" },
+  { name: "Java", color: "#007396" },
+  { name: "Python", color: "#3776AB" },
+  { name: "Power BI", color: "#F2C811" },
+  { name: "Git", color: "#F05032" },
+  { name: "GitHub", color: "#ffffff" },
+  { name: "Google Cloud", color: "#4285F4" },
+  { name: "VS Code", color: "#007ACC" },
+  { name: "Leadership", color: "#a78bfa" },
+  { name: "Self-driven", color: "#fbbf24" },
+  { name: "Problem Solving", color: "#f472b6" },
 ];
 
 // Helper to generate slightly randomized animation properties for organic bubble feel
@@ -68,7 +84,7 @@ export default function Skills() {
             
             return (
               <motion.div
-                key={skill}
+                key={skill.name}
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -77,18 +93,23 @@ export default function Skills() {
                 <motion.span
                   animate={{ y: anim.y, x: anim.x, scale: anim.scale }}
                   transition={anim.transition}
+                  style={{
+                    color: skill.color,
+                    backgroundColor: `${skill.color}15`, // 15 hex opacity
+                    borderColor: `${skill.color}40`, // 40 hex opacity
+                    boxShadow: `0 4px 20px ${skill.color}10`,
+                  }}
                   className={`
                     flex items-center justify-center text-center
-                    backdrop-blur-md border border-white/10
-                    hover:bg-brand-primary hover:text-white hover:border-brand-primary hover:scale-110
+                    backdrop-blur-md border
+                    hover:scale-110 hover:brightness-125
                     transition-all duration-300 cursor-default
-                    shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(129,140,248,0.5)]
-                    ${isLarge ? 'px-8 py-4 text-lg font-semibold bg-[#1a1a1e]/80 text-white rounded-[2rem]' : 
-                      isSmall ? 'px-5 py-2 text-sm font-medium bg-[#111113]/60 text-muted rounded-full' : 
-                      'px-6 py-3 text-base font-medium bg-[#141417]/70 text-gray-200 rounded-[1.5rem]'}
+                    ${isLarge ? 'px-8 py-4 text-lg font-semibold rounded-[2rem]' : 
+                      isSmall ? 'px-5 py-2 text-sm font-medium rounded-full' : 
+                      'px-6 py-3 text-base font-medium rounded-[1.5rem]'}
                   `}
                 >
-                  {skill}
+                  {skill.name}
                 </motion.span>
               </motion.div>
             );
