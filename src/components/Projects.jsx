@@ -10,7 +10,7 @@ const projects = [
     description: "An AI-powered application that parses resumes, analyzes keyword density against job descriptions, and provides actionable insights to improve ATS scoring.",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800&auto=format&fit=crop", 
     github: "https://github.com/kajal70158/Resume-analyser",
-    live: "https://resume-analyser-89wh.onrender.com/",
+    live: "https://resume-analyser-steel-six.vercel.app/",
   },
   {
     title: "Jannat Food",
@@ -19,7 +19,7 @@ const projects = [
     description: "A full-stack food delivery platform featuring a custom shopping cart, secure payment integration, and an admin dashboard for real-time order tracking.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop", 
     github: "https://github.com/kajal70158/Jannat-Food",
-    live: "https://jannat-food.onrender.com/",
+    live: "https://jannat-food.vercel.app/",
   },
   {
     title: "Learning Platform",
@@ -28,16 +28,7 @@ const projects = [
     description: "An interactive EdTech platform supporting video streaming, module-based learning paths, and an automated backend grading system for student assessments.",
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop", 
     github: "https://github.com/kajal70158/Learning-Platform",
-    live: "https://learning-platform-ltfe.onrender.com/",
-  },
-  {
-    title: "Meeting App",
-    color: "#34d399",
-    stack: ["React", "WebRTC", "Socket.io"],
-    description: "A low-latency video conferencing application utilizing WebRTC and Socket.io for seamless peer-to-peer communication and real-time text chat.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop", 
-    github: "https://github.com/kajal70158/meeting",
-    live: "https://meeting-0jrx.onrender.com/",
+    live: "https://learning-platform-kappa-ten.vercel.app/",
   },
   {
     title: "Event Management System",
